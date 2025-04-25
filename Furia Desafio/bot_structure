@@ -1,0 +1,122 @@
+Estrutura do Chatbot para Fãs da FURIA CS
+Comandos Principais
+Comandos Básicos
+/start - Inicia o bot e exibe mensagem de boas-vindas
+/help - Exibe lista de comandos disponíveis e suas descrições
+/sobre - Exibe informações sobre o bot e sua finalidade
+Comandos de Informação sobre o Time
+/furia - Exibe informações gerais sobre a organização FURIA
+/roster - Exibe o roster atual do time de CS2
+/jogadores - Lista todos os jogadores com opção de ver detalhes individuais
+/staff - Exibe informações sobre a equipe técnica e administrativa
+Comandos de Jogadores Específicos
+/jogador [nome] - Exibe informações detalhadas sobre um jogador específico
+/fallen - Atalho para informações sobre FalleN
+/kscerato - Atalho para informações sobre KSCERATO
+/yuurih - Atalho para informações sobre yuurih
+/molodoy - Atalho para informações sobre molodoy
+/yekindar - Atalho para informações sobre YEKINDAR
+Comandos de Competições e Resultados
+/agenda - Exibe os próximos jogos da FURIA
+/resultados - Exibe os resultados recentes
+/conquistas - Lista as principais conquistas do time
+/torneios - Exibe informações sobre torneios atuais/futuros
+Comandos de Conteúdo e Mídia
+/noticias - Exibe as últimas notícias sobre a FURIA
+/social - Links para redes sociais oficiais da FURIA
+/curiosidades - Exibe curiosidades aleatórias sobre o time e jogadores
+/estatisticas - Mostra estatísticas do time e jogadores
+Fluxo de Conversação
+Fluxo Inicial
+Usuário inicia o bot com /start
+Bot envia mensagem de boas-vindas com logo da FURIA
+Bot apresenta os comandos principais
+Bot sugere começar com /furia ou /roster
+Fluxo de Informações sobre Jogadores
+Usuário solicita informações sobre jogadores (via /jogadores ou comando específico)
+Bot exibe lista de jogadores ou informações do jogador específico
+Para lista, bot oferece botões para selecionar jogador específico
+Ao selecionar jogador, bot exibe perfil detalhado
+Bot oferece opções adicionais (estatísticas, curiosidades, etc.)
+Fluxo de Competições
+Usuário solicita informações sobre competições (via /agenda, /resultados, etc.)
+Bot exibe informações solicitadas
+Bot oferece opções para mais detalhes ou informações relacionadas
+Fluxo de Interação Contínua
+Bot responde a comandos específicos com informações relevantes
+Após cada resposta, bot sugere comandos relacionados
+Periodicamente, bot pode enviar notificações sobre jogos próximos (opcional)
+Estrutura de Dados
+Dados dos Jogadores
+python
+jogadores = {
+    "fallen": {
+        "nome_completo": "Gabriel Toledo",
+        "nickname": "FalleN",
+        "nacionalidade": "Brasil",
+        "data_entrada": "03/07/2023",
+        "funcao": "AWPer/IGL",
+        "bio": "Considerado um dos maiores jogadores brasileiros de CS de todos os tempos...",
+        "foto": "fallen.jpg",
+        "estatisticas": {...},
+        "curiosidades": [...]
+    },
+    # Outros jogadores seguem o mesmo formato
+}
+Dados de Competições
+python
+competicoes = {
+    "proximas": [
+        {
+            "nome": "Nome do Torneio",
+            "data": "DD/MM/YYYY",
+            "adversario": "Nome do Time",
+            "formato": "Bo3",
+            "link": "URL para mais informações"
+        },
+        # Outros jogos
+    ],
+    "resultados": [
+        {
+            "nome": "Nome do Torneio",
+            "data": "DD/MM/YYYY",
+            "adversario": "Nome do Time",
+            "resultado": "FURIA 2-0 Adversário",
+            "link": "URL para mais informações"
+        },
+        # Outros resultados
+    ],
+    "conquistas": [
+        {
+            "nome": "Nome do Torneio",
+            "data": "DD/MM/YYYY",
+            "premio": "$100,000",
+            "descricao": "Breve descrição da conquista"
+        },
+        # Outras conquistas
+    ]
+}
+Dados de Notícias
+python
+noticias = [
+    {
+        "titulo": "Título da Notícia",
+        "data": "DD/MM/YYYY",
+        "resumo": "Breve resumo da notícia...",
+        "link": "URL para notícia completa"
+    },
+    # Outras notícias
+]
+Funcionalidades Adicionais (Futuras)
+Notificações
+Sistema de notificações para jogos próximos
+Alertas de resultados de partidas
+Notificações de mudanças no roster
+Interatividade
+Quiz sobre a história da FURIA
+Enquetes sobre jogos e jogadores
+Sistema de pontos para fãs mais ativos
+Conteúdo Exclusivo
+Wallpapers e imagens exclusivas
+Códigos promocionais para produtos oficiais
+Informações de bastidores
