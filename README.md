@@ -22,6 +22,7 @@ furia_bot/
 ├── bot.py               # Código principal do bot
 ├── furia_features.py    # Funcionalidades específicas da FURIA
 ├── furia_info.md        # Informações coletadas sobre a FURIA
+├── handlers.py          # Configurações e funções especificas
 ├── bot_structure.py     # Documentação da estrutura do bot
 ├── requirements.txt     # Lista de tarefas do projeto
 └── README.md            # Este arquivo
@@ -42,7 +43,7 @@ bash
 pip install python-telegram-bot --upgrade
 Configure o token do bot:
 Obtenha um token do BotFather no Telegram (https://t.me/BotFather)
-Substitua "SEU_TOKEN_AQUI" nos arquivos main.py e test_bot.py pelo seu token
+Substitua "SEU_TOKEN_AQUI" nos arquivos bot.py e handlers.py pelo seu token
 
 Uso
 Executando o Bot
